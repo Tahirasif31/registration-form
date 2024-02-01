@@ -1,0 +1,119 @@
+html {
+  font-size: 62.50%;
+}
+
+.titleMain {
+  color: var(--Dark-blue, #282938);
+    text-align: center;
+  
+    /* Heading 2 */
+    font-family: Poppins;
+    font-size: 4.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.title {
+    color: var(--Dark-blue, #282938);
+    text-align: center;
+  
+    /* Heading 2 */
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.8rem; /* 133.333% */
+  }
+  .description {
+    color: var(--Dark-blue, #282938);
+    text-align: center;
+  
+    /* Paragraph */
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.3rem; /* 175% */
+    margin-bottom: 2.2rem;
+  }
+  .formContainer {
+    border-radius: 1.2rem;
+    background: var(--Grey, #f4f6fc);
+    /* padding: 6.3rem 7.6rem 6.9rem 6.7rem; */
+    padding: 4rem 6rem;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-shrink: 0;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+  .name {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.2rem; /* 177.778% */
+  }
+  .nameInput {
+    display: inline-flex;
+    padding: 1.8rem 3.2rem;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .desc {
+    display: flex;
+    height: 14rem;
+    padding: 1.8rem 3.2rem;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0;
+  }
+  .btn {
+    text-decoration: none;
+    display: flex;
+    width: 25.4rem;
+    height: 6.4rem;
+    padding: 1.5rem 5.1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    border-radius: 4.1rem;
+    background: var(--Dark-blue, #282938);
+    color: var(--Grey, #f4f6fc);
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.2rem; /* 177.778% */
+    margin-top: 3.2rem;
+  }
+  .marginTopSmall {
+    margin-top: 1.6rem;
+  }
+  
+  @media screen and (max-width: 510px) {
+    .formContainer {
+      padding: 2rem 4rem;
+    }
+    .form {
+      grid-template-columns: 1fr;
+      column-gap: 2.2rem;
+      row-gap: 1.4rem;
+    }
+  }
+  
