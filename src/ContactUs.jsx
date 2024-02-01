@@ -49,7 +49,7 @@ function ContactUs() {
           </div>
           <div className={styles.inputContainer}>
             <label htmlFor="phone" className={styles.name}>
-              Phone
+              Father Name
             </label>
             <input
               id="phone"
@@ -61,7 +61,7 @@ function ContactUs() {
           </div>
           <div className={styles.inputContainer}>
             <label htmlFor="group-name" className={styles.name}>
-              Group Name
+              CNIC No
             </label>
             <input
               id="group-name"
@@ -73,7 +73,54 @@ function ContactUs() {
           </div>
           <div className={styles.inputContainer}>
             <label htmlFor="name" className={styles.name}>
-              Group Link
+              Date Of Birth
+            </label>
+            <input
+              id="name"
+              type="text"
+              className={styles.nameInput}
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <label htmlFor="name" className={styles.name}>
+              Gender
+            </label>
+            <input
+              id="name"
+              type="text"
+              className={styles.nameInput}
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <label htmlFor="name" className={styles.name}>
+              Phone
+            </label>
+            <input
+              id="name"
+              type="text"
+              className={styles.nameInput}
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <label htmlFor="name" className={styles.name}>
+              Course
+            </label>
+            <select>
+            <option>Amazon</option>
+            <option>Social Media Marketing</option>
+            <option>Web Development</option>
+            <option>English</option>
+            </select>
+          </div>
+          <div className={styles.inputContainer}>
+            <label htmlFor="name" className={styles.name}>
+              payment Slip
             </label>
             <input
               id="name"
@@ -86,7 +133,7 @@ function ContactUs() {
         </div>
         <div className={`${styles.inputContainer} ${styles.marginTopSmall}`}>
           <label htmlFor="desc" className={styles.name}>
-            Description
+            Message
           </label>
           <input
             id="desc"
@@ -94,6 +141,9 @@ function ContactUs() {
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
           />
+        </div>
+        <div>
+          <span> <input type="checkbox"/> I agree with the terms and conditions</span>
         </div>
         <button className={styles.btn}>Submit</button>
       </form>
